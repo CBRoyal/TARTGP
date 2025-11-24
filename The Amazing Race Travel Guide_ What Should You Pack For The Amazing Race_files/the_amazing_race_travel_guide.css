@@ -1,0 +1,239 @@
+:root{
+    --the-amazing-race-travel-guide-website-bg-color: #ffff00;
+    --the-amazing-race-travel-guide-website-bg-border-color: #000000;
+    --the-amazing-race-travel-guide-nav-links-hover-color: #008000;
+    --the-amazing-race-travel-guide-nav-links-visited-color: #8b0000;
+    --the-amazing-race-travel-guide-footer-text-color: #ffffff;
+    --the-amazing-race-travel-guide-challenge-section-color: #8b4513;
+    --the-amazing-race-travel-guide-challenge-section-text-color: #90ee90;
+    --the-amazing-race-travel-guide-travel-booking-section-color: #696969;
+    --the-amazing-race-travel-guide-travel-booking-section-text-color: #800000;
+    --the-amazing-race-travel-guide-packing-section-color: #191970;
+    --the-amazing-race-travel-guide-packing-section-text-color: #48d1cc;
+    --the-amazing-race-travel-guide-physical-challenge-section-color: #a0522d;
+    --the-amazing-race-travel-guide-physical-challenge-section-text-color: #7cfc00;
+    --the-amazing-race-travel-guide-mental-challenge-section-color: #ff1493;
+    --the-amazing-race-travel-guide-mental-challenge-section-text-color: #4169e1;
+    --the-amazing-race-travel-guide-water-travel-section-color: #0000ff;
+    --the-amazing-race-travel-guide-water-travel-section-text-color: #00ffff;
+    --the-amazing-race-travel-guide-necessary-items-section-color: #ffe4b5;
+    --the-amazing-race-travel-guide-necessary-items-section-text-color: #dda0dd;
+    --the-amazing-race-travel-guide-just-in-case-items-section-color: #800080;
+    --the-amazing-race-travel-guide-just-in-case-items-section-text-color: #ffa500;
+}
+#the_amazing_race_travel_guide_main_page,
+#the_amazing_race_travel_guide_challenge_page,
+#the_amazing_race_travel_guide_travel_booking_page,
+#the_amazing_race_travel_guide_packing_page{
+    background-color: var(--the-amazing-race-travel-guide-website-bg-color);
+    border: 10px solid var(--the-amazing-race-travel-guide-website-bg-border-color);
+}
+#the_amazing_race_travel_guide_main_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar challenge challenge"
+    "sidebar booking packing"
+    "footer footer footer";
+}
+#the_amazing_race_travel_guide_challenge_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar physical mental"
+    "footer footer footer";
+}
+#the_amazing_race_travel_guide_travel_booking_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar land land"
+    "sidebar water air"
+    "footer footer footer";
+}
+#the_amazing_race_travel_guide_packing_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar pack pack"
+    "sidebar necessary incase"
+    "footer footer footer";
+}
+.the_amazing_race_travel_guide_headbars{
+    background-image: url("https://th.bing.com/th/id/R.d9ba8546ce90a99db3b239ce2ba34444?rik=ID0I47wFf6Yhkw&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2famazingrace%2fimages%2f4%2f4e%2fTARlogo-US23.jpg%2frevision%2flatest%3fcb%3d20141223051205&ehk=KrAgMO6TVF2CJEOwXAv%2fCKI4I%2bl4LK7Cchur3Ihyy%2fw%3d&risl=&pid=ImgRaw&r=0");
+    color: var(--the-amazing-race-travel-guide-website-bg-color);
+    text-shadow: 2px 2px var(--the-amazing-race-travel-guide-website-bg-border-color);
+    font-family: "BBH Sans Bogle", "Courier", serif;
+    font-size: 20px;
+    text-align: center;
+    grid-area: header;
+}
+.the_amazing_race_travel_guide_first_title_line{
+    animation-name: runningFirstTitle;
+    animation-duration: 2s;
+}
+.the_amazing_race_travel_guide_second_title_line{
+    animation-name: runningSecondTitle;
+    animation-duration: 4s;
+}
+.the_amazing_race_travel_guide_nav_links{
+    grid-area: sidebar;
+}
+.the_amazing_race_travel_guide_nav_links ul{
+    list-style-type: none;
+}
+.the_amazing_race_travel_guide_nav_links li a{
+    color: var(--the-amazing-race-travel-guide-website-bg-border-color);
+    font-family: "BBH Sans Bogle", "Courier", serif;
+    font-size: 20px;
+}
+.the_amazing_race_travel_guide_nav_links li a:hover{
+    color: var(--the-amazing-race-travel-guide-nav-links-hover-color);
+}
+.the_amazing_race_travel_guide_nav_links li a:visited{
+    color: var(--the-amazing-race-travel-guide-nav-links-visited-color);
+}
+#the_amazing_race_travel_guide_challenge_section{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: challenge;
+}
+#the_amazing_race_travel_guide_challenge_part{
+    color: var(--the-amazing-race-travel-guide-challenge-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-challenge-section-color);
+}
+#the_amazing_race_travel_guide_travel_booking_section{
+    color: var(--the-amazing-race-travel-guide-travel-booking-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-travel-booking-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: booking;
+}
+#the_amazing_race_travel_guide_boston_rob_and_amber_photo,
+#the_amazing_race_travel_guide_watermeleon_slingshot_photo,
+#the_amazing_race_travel_guide_my_ox_is_broken_photo,
+#the_amazing_race_travel_guide_airport_chaos_photo{
+    filter: contrast(75%) opacity(80) grayscale(0.4); 
+}
+#the_amazing_race_travel_guide_packing_section{
+    color: var(--the-amazing-race-travel-guide-packing-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-packing-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: packing;
+}
+#the_amazing_race_travel_guide_challenge_main_section{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: main;
+}
+#the_amazing_race_travel_guide_physical_challenge_section{
+    color: var(--the-amazing-race-travel-guide-physical-challenge-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-physical-challenge-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: physical;
+}
+#the_amazing_race_travel_guide_mental_challenge_section{
+    color: var(--the-amazing-race-travel-guide-mental-challenge-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-mental-challenge-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: mental;
+}
+#the_amazing_race_travel_guide_land_travel_section{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: land;
+}
+#the_amazing_race_travel_guide_land_travel_part{
+    color: var(--the-amazing-race-travel-guide-footer-text-color);
+    background-color: var(--the-amazing-race-travel-guide-website-bg-border-color);
+}
+#the_amazing_race_travel_guide_water_travel_section{
+    color: var(--the-amazing-race-travel-guide-water-travel-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-water-travel-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: water;
+}
+#the_amazing_race_travel_guide_air_travel_section{
+    color: var(--the-amazing-race-travel-guide-water-travel-section-color);
+    background-color: var(--the-amazing-race-travel-guide-footer-text-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: air;
+}
+#the_amazing_race_travel_guide_packing_main_section{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: pack;
+}
+#the_amazing_race_travel_guide_packing_necessary_items_section{
+    color: var(--the-amazing-race-travel-guide-necessary-items-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-necessary-items-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: necessary;
+}
+#the_amazing_race_travel_guide_packing_just_in_case_items_section{
+    color: var(--the-amazing-race-travel-guide-just-in-case-items-section-text-color);
+    background-color: var(--the-amazing-race-travel-guide-just-in-case-items-section-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    grid-area: incase;
+}
+.the_amazing_race_travel_guide_buttons{
+    background-color: var(--the-amazing-race-travel-guide-website-bg-color);
+    border: 8px solid var(--the-amazing-race-travel-guide-website-bg-border-color);
+    padding: 10px;
+    box-shadow: 2px 2px 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.the_amazing_race_travel_guide_buttons:hover{
+    transform: scale(1.05, 1.05);
+    color: var(--the-amazing-race-travel-guide-nav-links-visited-color);
+    cursor: pointer;
+}
+.the_amazing_race_travel_guide_buttons:active{
+    transform: scale(0.5, 0.5);
+}
+.the_amazing_race_travel_guide_footbars{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--the-amazing-race-travel-guide-website-bg-border-color);
+    color: var(--the-amazing-race-travel-guide-footer-text-color);
+    font-size: 25px;
+    grid-area: footer;
+}
+.copyright_links, .storage_links{
+    color: var(--the-amazing-race-travel-guide-website-bg-color);
+}
+.copyright_links:hover, .storage_links:hover{
+    color: var(--the-amazing-race-travel-guide-footer-text-color);
+}
+@keyframes runningFirstTitle{
+    0%{transform: translate(-1000px, 0px) scale(1,1);}
+    25%{transform: translate(60px, 0px) scale(1,1);}
+    75%{transform: translate(-60px, 0px) scale(1,1);}
+    90%{transform: translate(0px, 0px) scale(2,2);}
+    100%{transform: translate(0px, 0px) scale(1,1);}
+}
+@keyframes runningSecondTitle{
+    0%{transform: translate(-1000px, 0px) scale(1,1);}
+    15%{transform: translate(-1000px, 0px) scale(1,1);}
+    20%{transform: translate(-1000px, 0px) scale(1,1);}
+    25%{transform: translate(60px, 0px) scale(1,1);}
+    75%{transform: translate(-60px, 0px) scale(1,1);}
+    90%{transform: translate(0px, 0px) scale(2,2);}
+    100%{transform: translate(0px, 0px) scale(1,1);}
+}
