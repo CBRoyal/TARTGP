@@ -20,7 +20,7 @@
     grid-template-areas: 
     "header header header"
     "sidebar pack pack"
-    "sidebar necessary incase"
+    "necessary necessary incase"
     "footer footer footer";
 }
 .the_amazing_race_travel_guide_title{
