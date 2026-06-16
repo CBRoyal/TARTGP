@@ -90,8 +90,15 @@
     font-family: "BBH Bogle", "Courier", serif;
     font-size: 20px;
 }
+.the_amazing_race_travel_guide_nav_links li a::after{
+    content: "\2708";
+    opacity: 0;
+}
 .the_amazing_race_travel_guide_nav_links li a:hover{
     color: var(--the-amazing-race-travel-guide-nav-links-hover-color);
+}
+.the_amazing_race_travel_guide_nav_links li a:hover::after{
+    opacity: 1;
 }
 .the_amazing_race_travel_guide_nav_links li a:active{
     color: var(--the-amazing-race-travel-guide-nav-links-active-color);
