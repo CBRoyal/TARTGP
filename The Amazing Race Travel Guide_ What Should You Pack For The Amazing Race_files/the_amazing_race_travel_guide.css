@@ -120,6 +120,7 @@
     margin-left: 50px;
 }
 #the_amazing_race_travel_guide_non_valid_items_subsection{
+    padding-right: 50px;
     border-top: 10px solid var(--the-amazing-race-travel-guide-necessary-items-section-text-color);
 }
 #the_amazing_race_travel_guide_packing_just_in_case_items_section_title{
