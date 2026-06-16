@@ -172,3 +172,64 @@
     90%{transform: translate(0px, 0px) scale(2,2);}
     100%{transform: translate(0px, 0px) scale(1,1);}
 }
+@media (max-width: 800px){
+    #the_amazing_race_travel_guide_travel_booking_content{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "header header header"
+        "sidebar pack pack"
+        "necessary necessary incase"
+        "footer footer footer";
+    }
+    .the_amazing_race_travel_guide_title{
+        grid-area: header;
+    }
+    .the_amazing_race_travel_guide_nav_links{
+        grid-area: sidebar;
+    }
+    #the_amazing_race_travel_guide_packing_main_section{
+        grid-area: pack;
+    }
+    #the_amazing_race_travel_guide_packing_necessary_items_section{
+        grid-area: necessary;
+    }
+    #the_amazing_race_travel_guide_packing_just_in_case_items_section{
+        grid-area: incase;
+    }
+    .the_amazing_race_travel_guide_footbars{
+        grid-area: footer;
+    }
+}
+@media (max-width: 500px){
+    #the_amazing_race_travel_guide_travel_booking_content{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "header header"
+        "sidebar pack"
+        "necessary necessary"
+        "incase incase"
+        "footer footer";
+    }
+    .the_amazing_race_travel_guide_title{
+        grid-area: header;
+    }
+    .the_amazing_race_travel_guide_nav_links{
+        grid-area: sidebar;
+    }
+    #the_amazing_race_travel_guide_packing_main_section{
+        grid-area: pack;
+    }
+    #the_amazing_race_travel_guide_packing_necessary_items_section{
+        grid-area: necessary;
+    }
+    #the_amazing_race_travel_guide_packing_just_in_case_items_section{
+        grid-area: incase;
+    }
+    .the_amazing_race_travel_guide_footbars{
+        grid-area: footer;
+    }
+}
