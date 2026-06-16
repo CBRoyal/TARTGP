@@ -72,7 +72,7 @@
     background-image: url("https://th.bing.com/th/id/R.d9ba8546ce90a99db3b239ce2ba34444?rik=ID0I47wFf6Yhkw&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2famazingrace%2fimages%2f4%2f4e%2fTARlogo-US23.jpg%2frevision%2flatest%3fcb%3d20141223051205&ehk=KrAgMO6TVF2CJEOwXAv%2fCKI4I%2bl4LK7Cchur3Ihyy%2fw%3d&risl=&pid=ImgRaw&r=0");
     color: var(--the-amazing-race-travel-guide-website-bg-color);
     text-shadow: 2px 2px var(--the-amazing-race-travel-guide-website-bg-border-color);
-    font-family: "BBH Sans Bogle", "Courier", serif;
+    font-family: "BBH Bogle", "Courier", serif;
     font-size: 20px;
     text-align: center;
     grid-area: header;
@@ -93,7 +93,7 @@
 }
 .the_amazing_race_travel_guide_nav_links li a{
     color: var(--the-amazing-race-travel-guide-website-bg-border-color);
-    font-family: "BBH Sans Bogle", "Courier", serif;
+    font-family: "BBH Bogle", "Courier", serif;
     font-size: 20px;
 }
 .the_amazing_race_travel_guide_nav_links li a:hover{
