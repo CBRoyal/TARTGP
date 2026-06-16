@@ -15,7 +15,7 @@
 }
 #the_amazing_race_travel_guide_packing_content{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 25% 25% 50%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "header header header"
